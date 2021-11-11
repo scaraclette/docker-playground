@@ -1,0 +1,4 @@
+FROM nginx:1.15
+
+# COPY from build context to destination directory inside the image
+COPY index.html /usr/share/nginx/html
