@@ -1,0 +1,9 @@
+FROM node:11-alpine
+
+ENV diameter=10
+
+COPY compute.js .
+
+# CMD ["sh", "compute.js"] -> wrong answer
+
+CMD node compute.js

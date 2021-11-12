@@ -1,0 +1,5 @@
+Practices:
+1. Use tags -> docker build -t my-image:1.0 .
+
+Flow:
+1. Simple temporary flow: build docker, run docker, stop and remove container, delete image

@@ -1,0 +1,2 @@
+Create docker image from docker file with a name: docker build -t hello .
+run and remove image: docker run --rm hello

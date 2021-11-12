@@ -1,0 +1,4 @@
+FROM debian:8
+
+# Specify comands
+CMD [ "echo", "Hello world" ]

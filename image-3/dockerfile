@@ -1,0 +1,9 @@
+FROM node:11-alpine
+
+# Write additional commands to complete the docker file
+
+# 1. Copy the compute.js file
+COPY compute.js .
+
+# Go to directory in docker and run js file
+CMD node compute.js

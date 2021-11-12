@@ -1,0 +1,16 @@
+Containers should be stateless. Use volumes to make it stateful.
+1. MySql without volumes: docker run -d mysql:5.7
+2. MySql with volumes: docker run -v /your/dir:/var/lib/mysql -d mysql:5.7
+
+Create a named volume mounted to a container:
+Create: docker run -d --name devtest -v myvol2:/app nginx:latest
+Info:
+  - container name: devtest
+  - volume name: myvol2
+  - mounted dir: {base_docker_volume_dir}/app
+  - base image: nginx:latest
+To stop and remove:
+1. docker container stop devtest
+2. docker container rm devtest
+3. docker volume rm myvol2
+
