@@ -1,5 +1,5 @@
 # docker-playground
-Repository for learning docker
+Repository for learning docker and docker-compose
 
 ## Questions
 1. Should modules be bundled? Ignored?
