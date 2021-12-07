@@ -1,0 +1,23 @@
+# Attempt
+version: '3'
+
+services:
+  web:
+    build: .
+
+    ports:
+      - "5000:5000"
+
+    env_file:
+      - ./.flaskenv
+    
+    volumes:
+      - ".:/code"
+  
+  database:
+    build:
+      context: ./db
+      dockerfile: Dockerfile-db
+    
+    volumes:
+      - "./db/init.sql:/docker-entrypoint-initdb.d/init.sql"
